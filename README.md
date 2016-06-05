@@ -11,6 +11,10 @@ change any target application logic.
 I wanted to learn about the networking packages built into the Go language. The project is inspired by
 this cool and simple middleware package called [Alice](https://github.com/justinas/alice).
 
+### Disclaimer
+Having the RoundTrip function modify the request or the response being handled is against Go language convention, as
+described in its [documentation](https://golang.org/pkg/net/http/#RoundTripper).
+
 ### Example
 ```go
 package main
